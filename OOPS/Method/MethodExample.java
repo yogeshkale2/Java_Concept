@@ -1,4 +1,3 @@
-
 /*public class MethodExample{
     void displaymsg(){
         System.out.println("Good Morning");
