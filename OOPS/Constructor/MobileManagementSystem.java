@@ -13,43 +13,42 @@ class Mobile {
         this.price = price;
     }
 
-    // Getter for Mobile ID
-    public int getMobileId() {
+    // Getters
+    public int getmobileId() {
         return mobileId;
     }
 
-    // Getter for Brand
-    public String getBrand() {
+    public String getbrand() {
         return brand;
     }
 
-    // Getter for Model
-    public String getModel() {
+    public String getmodel() {
         return model;
     }
 
-    // Getter for Price
-    public double getPrice() {
+    public double getprice() {
         return price;
     }
 
-    // Setter for Brand
-    public void setBrand(String brand) {
+    // Setters
+    public void setmobileId(int mobileId) {
+        this.mobileId = mobileId;
+    }
+
+    public void setbrand(String brand) {
         this.brand = brand;
     }
 
-    // Setter for Model
-    public void setModel(String model) {
+    public void setmodel(String model) {
         this.model = model;
     }
 
-    // Setter for Price
-    public void setPrice(double price) {
+    public void setprice(double price) {
         this.price = price;
     }
 
-    // Display Mobile Information
-    public void displayInfo() {
+    // Mobile Information
+    public void moblieInfo() {
         System.out.println("Mobile ID : " + mobileId);
         System.out.println("Brand : " + brand);
         System.out.println("Model : " + model);
@@ -61,30 +60,29 @@ public class MobileManagementSystem {
 
     public static void main(String[] args) {
 
-        // Object creation using Constructor
-        Mobile mobile = new Mobile(
+        Mobile obj = new Mobile(
                 101,
-                "Samsung",
-                "Galaxy S24",
-                75000);
+                "I Phone",
+                "18 Pro",
+                350000.00);
 
-        System.out.println("----- Mobile Details -----");
-
-        mobile.displayInfo();
+        System.out.println("--- Mobile Information ---");
+        obj.moblieInfo();
 
         System.out.println();
 
-        // Updating values using Setters
-        mobile.setBrand("Apple");
-        mobile.setModel("iPhone 16");
-        mobile.setPrice(80000);
+        // Change values using SETTER
+        obj.setmobileId(102);
+        obj.setbrand("Samsung");
+        obj.setmodel("Galaxy S25");
+        obj.setprice(120000.00);
 
-        System.out.println("----- Updated Details -----");
+        System.out.println("--- Updated Details ---");
 
-        // Getting values using Getters
-        System.out.println("Mobile ID : " + mobile.getMobileId());
-        System.out.println("Brand : " + mobile.getBrand());
-        System.out.println("Model : " + mobile.getModel());
-        System.out.println("Price : " + mobile.getPrice());
+        // Get updated values using GETTER
+        System.out.println("Mobile ID : " + obj.getmobileId());
+        System.out.println("Brand : " + obj.getbrand());
+        System.out.println("Model : " + obj.getmodel());
+        System.out.println("Price : " + obj.getprice());
     }
 }
