@@ -8,9 +8,10 @@ public class HashSetEx {
         hash.add("Python");
         hash.add("C++");
         hash.add("Java");
-        System.out.println(hash);
 
+        for (String Hash : hash) {
+            System.out.println(Hash);
+        }
 
-        
     }
 }
