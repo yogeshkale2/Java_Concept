@@ -24,5 +24,28 @@ public class ArrayList_Ex {
         System.out.println("Index of 'Akshada': " + name.indexOf("Akshada")); // Get the index of 'Akshada'
 
         System.out.println("Last index of 'payal': " + name.lastIndexOf("payal")); // Get the last index of 'payal'
+        System.out.println(name.removeAll(name)); // Remove all elements from the ArrayList
+        System.out.println("Is the ArrayList empty after removing all elements? " + name.isEmpty()); // Check if the
+                                                                                                     // ArrayList is
+                                                                                                     // empty after
+                                                                                                     // removing all
+                                                                                                     // elements
+        System.out.println("Size of ArrayList after removing all elements: " + name.size()); // Get the size of the
+                                                                                             // ArrayList after removing
+                                                                                             // all elements
+
+        for (String num : name) { // Print the ArrayList using Enhanced For loop
+            System.out.println(num);
+        }
+
+        System.out.println("...........");
+        // ArrayList of Integer
+        ArrayList<Integer> age = new ArrayList<>();
+        age.add(21);
+        age.add(18);
+        age.add(20);
+        age.add(16);
+        System.out.println("Size of ArrayList: " + age.size()); // Get The Size of ArrayList
+        System.out.println(age); // Print the ArrayList
     }
 }
